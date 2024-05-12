@@ -1,1 +1,1 @@
-openSUSE on labwc dotfiles
+labwc on openSUSE tumbleweed dotfiles
