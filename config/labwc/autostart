@@ -1,0 +1,11 @@
+# Background Color
+swaybg -c '#c5c9c5' >/dev/null 2>&1 &
+
+# Set Monitor Resolution and Refresh Rate
+wlr-randr --output DP-3 --mode 1920x1080@143.992004Hz >/dev/null 2>&1 &
+
+# Launch waybar
+waybar >/dev/null 2>&1 &
+
+# Notifications
+mako >/dev/null 2>&1 &

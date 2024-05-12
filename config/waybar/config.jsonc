@@ -1,0 +1,32 @@
+// -*- mode: jsonc -*-
+{
+    // "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 32, // Waybar height (to be removed for auto height)
+    // "width": 1080, // Waybar width
+    "spacing": 4, // Gaps between modules (4px)
+    // Choose the order of the modules
+
+"modules-left": [
+	"wlr/taskbar"
+    ],
+    "modules-center": [ 
+    ],
+    "modules-right": [
+	"clock"
+    ],
+    
+    "clock": {
+    "format": "{:%a %b %d, %I:%M %p}"
+    },
+
+    "wlr/taskbar": {
+    "format": "{app_id}",
+    "on-click": "minimize-raise",
+    "on-click-right": "close"
+    }
+/*"custom/applications": {
+    "format": "applications",
+    "on-click": "exec rofi -show drun"
+    }*/
+}
